@@ -25,7 +25,8 @@ admin.site.site_title = 'iMaster Admin Panel' # default: "Django site admin"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("control/", include("control.urls"), name="control")
+    path("control/", include("control.urls"), name="control"),
+    path("account/", include("account.urls"), name="account"),
 
 ]
 
